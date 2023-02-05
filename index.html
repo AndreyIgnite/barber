@@ -8,6 +8,7 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
+        <a class="nav-logo" href="#"><img class="logo-main" src="#" alt="Логотип Барбершопа"></a>
           <ul class="nav-list">
           <li class="nav-element">
             <a class="nav-link" href="about.html">О нас</a>
@@ -32,9 +33,9 @@
           </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="main-index">
       <h1 class="invisible-element">Барбершоп "Бородинский"</h1>
-      <img class="logo" src="" alt="Логотип Барбершопа">
+      
       <section class="advantage">
         <h2 class="invisible-element">Преимущества</h2>
         <ul>
@@ -94,8 +95,8 @@
             <address class="contacts-adress">
               <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                   <a class="contacts-number" href="tel:88005558628">+7 800 555-86-28</a>
-              <h3 class="contacts-subtitle">Время работы</h3>
-          </address>  
+            </address>  
+          <h3 class="contacts-subtitle">Время работы</h3>
           <ul class="contacts-schedule">
             <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
             <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
@@ -105,23 +106,71 @@
           </div>
           <button class="button button-feedback">Обратная связь</button>
       </section>
-      <section>
+      <section class="order">
         <h2 class="order-title">Записаться</h2>
-        <p class="order-date">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
-        <form class="order-form" action="#" method="post">
-          <p>Дата</p>
-          <input type="date" placeholder="01.01.2020">
-          <p>Время</p>
-          <input type="time" placeholder="10:10">
-          <p>Телефон</p>
-          <input type="tel" placeholder="+7 800 000-00-00">
-          <p>Ваше Имя</p>
-          <input type="text">
-        </form>
-        <button class="button button-order">Записаться</button>
+        <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+          <form class="order-form" action="#" method="post">
+            <p class="order-form-date">
+              <span class="form-label from-label-icon">
+                <label for="form-date">Дата</label>
+                <button class="info" type="menu"><span class="invisible-element">Доп информация</span></button>
+              </span>
+                <input type="date" name="date" id="form-date" placeholder="10:10">
+            </p>
+            <p class="order-form-time">
+              <span class="form-label form-label-icon">
+                <label for="form-time">Время</label>
+                <button class="info"><span class="invisible-element">Доп информация</span></button>
+              </span>
+                <input type="time" name="time" id="form-time">
+            </p>
+            <p class="order-form-number">
+              <label for="form-phone">Телефон</label>
+              <input type="tel" name="phone" id="form-phone" placeholder="+7 800 000-00-00">
+            </p>
+            <p class="order-form-name">
+              <label for="form-name">Ваше Имя</label>
+              <input type="tel" name="name" id="form-name">
+            </p>
+          </form>
+        <button class="button button-order" type="submit">Записаться</button>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <img class="logo-footer" src="#" alt="Логототип барбершопа">
+      <section class="footer-contats">
+        <h2 class="footer-contats-title invisible-element"><span>Контакты</span></h2>
+        <address class="footer-contacts-adress">
+          <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="footer-number" href="tel:88005558628">+7 800 555-86-28</a>
+        </address>
+        <a class="footer-contacts-map">Как нас найти</a>  
+      </section>
+      <section class="subscription">
+        <h2 class="footer-title">Получайте лучшие предложения</h2>
+        <form class="footer-form" action="#" method="post">
+          <p>
+            <label for="e-mail">Ваша почта</label>
+            <input type="text" name="e-mail" id="e-mail" placeholder="email@htmlacademy.ru">
+          </p>
+        </form>
+        <button class="button button-subscribe" type="submit"><span class="invisible-element">Подписаться</span></button>
+      </section>
+      <section class="socialclub">
+        <h2 class="footer-title">Давайте дружить</h2>
+        <ul class="footer-nav-list">
+          <li class="footer-nav-element">
+            <a class="button footer-nav-link" href="#"><span>Twitter</span></a>
+          </li>
+          <li class="footer-nav-element">
+            <a class="button footer-nav-link" href="#"><span>VK</span></a>
+          </li>
+          <li class="footer-nav-element">
+            <a class="button footer-nav-link" href="#"><span>Instagram</span></a>
+          </li>
+        </ul>
+        <p class="madein">Сделано в<a class="link" href="">.html academy</a></p>
+      </section>
     </footer>
   </body>
 </html>
