@@ -34,6 +34,7 @@
         </nav>
       </header>
     <main class="main-inner">
+      <header>
         <h1 class="inner-header-title">Каталог</h1>
         <ul class="breadcrums">
             <li class="bredcrums-item">
@@ -42,7 +43,8 @@
             <li class="bredcrums-item">
                 <a class="breadcrums-link">Каталог</a>
             </li>
-            </ul>
+        </ul>
+      </header>
         <section class="catalog-products">
             <h2 class="invisible-element">Список товаров с фильтрами</h2>
             <form action="#" method="get">
@@ -123,7 +125,7 @@
                 </fieldset>
                 <button class="button button-show" type="submit">Показать</button>
             </form>
-            <form class="sotring" action="">
+            <form class="sotring">
               <label class="invisible-element" for="select">Сорировка</label>
               <select class="select-control" id="select">
                 <option value="exprensive">Сначала дорогие</option>
@@ -163,7 +165,7 @@
                 <div class="product-card">
                 <a class="product-card-link" href="product.html">
                   <img class="product-card-img" src="#" alt="">
-                <h3>Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                <h3>Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
                 </a>
                 <b class="product-card-price">94 ₽</b>
                 <a class="button button-card" href="">Купить</a>
@@ -200,7 +202,34 @@
                 </div>
               </li>
             </ul>
-
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a href="#" class="pagination pagination-prev pag-disabled">
+                  <span class="invisible-element">Предыдущая</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination pag-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination">5</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination pagination-next">
+                  <span class="invisible-element">Следующая</span>
+                </a>
+              </li>
+            </ul>
+            <button class="button button-show-more" type="button">Показать ещё</button>
         </section>
         
 
