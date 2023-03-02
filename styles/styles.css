@@ -2,7 +2,7 @@
     font-family: "PT Sans Narrow";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsansnarrow.woff2") format("woff2");
+    src: url("../fonts/ptsansnarrow.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans Narrow";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsansnarrowbold.woff2") format("woff2");
+    src: url("../fonts/ptsansnarrowbold.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -18,7 +18,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("PTSans-Regular.woff") format("woff");
+    src: url("../fonts/PTSans-Regular.woff") format("woff");
     font-display: swap;
 }
 
@@ -26,7 +26,125 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("PTSans-Bold.woff") format("woff");
+    src: url("../fonts/PTSans-Bold.woff") format("woff");
     font-display: swap;
 }
 
+body {
+    font-family: "PT Sans ", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242424;
+    background-color: #FBF7F4;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+
+
+}
+
+.page-header {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.nav-link {
+    font-family: "PT Sans Narrow", sans-serif;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-index {
+    color: #ffffff;
+    background-color: #000000;
+    background: url("../image/index-bg.jpg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+.advantage-list{
+    text-align: center;
+}
+
+.advantage-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.index-colums {
+
+    background-color: #FBF7F4;
+    color: #242424;
+    background-image: url("../image/bg-noisy.png");
+}
+
+.services {
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    
+}
+.servises-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.services-list {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+.services-price {
+    color: #AF7842;
+}
+
+.gallery {
+    text-transform: uppercase;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.gallery-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.contacts {
+    font-weight: 700;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.contacts-title {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.contacts-subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #AF7842;
+}
+.contacts-adress {
+    font-style: normal;
+    font-family: "PT Sans ", sans-serif;
+    
+}
