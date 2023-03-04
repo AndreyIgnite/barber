@@ -70,8 +70,8 @@ body {
 .main-index {
     color: #ffffff;
     background-color: #000000;
-    background: url("../image/index-bg.jpg");
-    background-size: 100% 50%;
+    background-image: url("../image/index-bg.jpg");
+    background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
@@ -127,24 +127,118 @@ body {
 .contacts {
     font-weight: 700;
     font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
 }
 
 .contacts-title {
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
-    text-transform: uppercase;
-
+    
 }
 .contacts-subtitle {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    text-transform: uppercase;
     color: #AF7842;
 }
 .contacts-adress {
     font-style: normal;
     font-family: "PT Sans ", sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
     
 }
+
+.contacts-number {
+    color: inherit;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+
+}
+
+.contacts-schedule {
+    font-family: "PT Sans ", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+}
+
+.appointment-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+}
+
+.appointment-form {
+    color: #595959;
+}
+
+.form-label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #242424;
+}
+
+.page-footer {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: url("../image/bg-noisy.png"), #242424;
+}
+
+.page-footer a {
+    color: #ffffff;
+}
+
+.page-footer .link {
+    color: #DBB590;
+}
+
+
+.page-footer-contacts-adress {
+    font-style: normal;
+           
+}
+
+.page-footer-contacts-adress p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+
+  .page-footer-contacts-adress-phone {
+    font-family: 'PT Sans Narrow';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+  }
+
+  .page-footer-contacts-map {
+    font-family: 'PT Sans Narrow';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+  }
+
+  .page-footer-title {
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
