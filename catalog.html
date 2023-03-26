@@ -2,13 +2,13 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="#">
         <title>Каталог</title>
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 <body>
-    <header class="main-header">
+    <header class="page-header">
         <nav class="main-nav">
-            <a class="nav-logo" href="index.html"><img class="logo-main" src="#" alt="Логотип Барбершопа"></a>
+            <a class="nav-logo" href="index.html"><img class="logo-main" src="/image/logo-catalog-dark.svg" width="140" height="18" alt="Логотип Барбершопа"></a>
             <ul class="nav-list">
             <li class="nav-element">
               <a class="nav-link" href="about.html">О нас</a>
@@ -28,20 +28,20 @@
               <a class="nav-link" href="#">Корзина</a>
             </li>
             <li class="nav-element">
-              <a class="nav-link" href="#">Вход</a>
+              <a class="nav-link" href="#">Профиль</a>
             </li>
             </ul>
         </nav>
       </header>
-    <main class="main-inner">
-      <header>
+    <main class="main-page-catalog">
+      <header class="inner-header">
         <h1 class="inner-header-title">Каталог</h1>
         <ul class="breadcrums">
             <li class="bredcrums-item">
                 <a class="breadcrums-link" href="index.html">Главная</a>
             </li>
             <li class="bredcrums-item">
-                <a class="breadcrums-link">Каталог</a>
+                <a class="breadcrums-link breadcrums-link-current">Каталог</a>
             </li>
         </ul>
       </header>
@@ -125,129 +125,131 @@
                 </fieldset>
                 <button class="button button-show" type="submit">Показать</button>
             </form>
-            <form class="sotring">
-              <label class="invisible-element" for="select">Сорировка</label>
-              <select class="select-control" id="select">
-                <option value="exprensive">Сначала дорогие</option>
-                <option value="cheap">Сначала дешёвые</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
-              <button class="invisible-element" type="submit">Отсортировать</button>
-            </form>
-            <a class="button button-light" href="#">
-              <span class="invisible-element">Показать список</span>
-            </a>
-            <a class="button" href="#">
-              <span class="invisible-element">Показать карточки</span>
-            </a>
+            <div class="sorting-container">
+              <form class="sotring-type">
+                <label class="invisible-element" for="select">Сорировка</label>
+                <select class="select-control" id="select">
+                  <option value="exprensive">Сначала дорогие</option>
+                  <option value="cheap">Сначала дешёвые</option>
+                  <option value="popular">Сначала популярные</option>
+                </select>
+                <button class="invisible-element" type="submit">Отсортировать</button>
+              </form>
+              <a class="button button-light" href="#">
+                <span class="invisible-element">Показать список</span>
+              </a>
+              <a class="button" href="#">
+                <span class="invisible-element">Показать карточки</span>
+              </a>
+            </div>
             <ul>
-              <li>
-                <div class="product-card">
+              <li class="product-card">
                   <a class="product-card-link" href="product.html">
-                    <img class="product-card-img" src="#" alt="">
-                  <h3>Шампунь для мужчин Brews Daily</h3>
+                    <img class="product-card-img" src="/image/catalog/catalog1.jpg" alt="">
+                  <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
                   </a>
                   <b class="product-card-price">744 ₽</b>
                   <a class="button button-card" href="">Купить</a>
-                </div>
+                
               </li>
-              <li>
-                <div class="product-card">
+              <li class="product-card">
                 <a class="product-card-link" href="product.html">
-                  <img class="product-card-img" src="#" alt="">
-                <h3>Syoss шампунь Men Power & Strength</h3>
+                  <img class="product-card-img" src="/image/catalog/catalog2.jpg" alt="">
+                <h3 class="product-card-title">Syoss шампунь Men Power & Strength</h3>
                 </a>
                 <b class="product-card-price">160 ₽</b>
                 <a class="button button-card" href="">Купить</a>
-                </div>
               </li>
-              <li>
-                <div class="product-card">
+              <li class="product-card">
+                
                 <a class="product-card-link" href="product.html">
-                  <img class="product-card-img" src="#" alt="">
-                <h3>Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
+                  <img class="product-card-img" src="/image/catalog/catalog3.jpg" alt="">
+                <h3 class="product-card-title">Schauma шампунь для мужчин «Сила и объём с хмелем»</h3>
                 </a>
                 <b class="product-card-price">94 ₽</b>
                 <a class="button button-card" href="">Купить</a>
-                </div>
+                
               </li>
-              <li>
-                <div class="product-card">
+              <li class="product-card">
+               
                 <a class="product-card-link" href="product.html">
-                  <img class="product-card-img" src="#" alt="">
-                <h3>Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
+                  <img class="product-card-img" src="/image/catalog/catalog4.jpg" alt="">
+                <h3 class="product-card-title">Nivea Men шампунь-уход  «Экстремальная свежесть с ментолом»</h3>
                 </a>
                 <b class="product-card-price">173 ₽</b>
                 <a class="button button-card" href="">Купить</a>
-                </div>
+                
               </li>
-              <li>
-               <div class="product-card">
+              <li class="product-card">
+              
                 <a class="product-card-link" href="product.html">
-                  <img class="product-card-img" src="#" alt="">
-                <h3>Шампунь Amplifier Thickening</h3>
+                  <img class="product-card-img" src="/image/catalog/catalog5.jpg" alt="">
+                <h3 class="product-card-title">Шампунь Amplifier Thickening</h3>
                 </a>
                 <b class="product-card-price">441 ₽</b>
                 <a class="button button-card" href="">Купить</a>
-                </div>
+                
               </li>
-              <li>
-                <div class="product-card">
+              <li class="product-card">
+                
                 <a class="product-card-link" href="product.html">
-                  <img class="product-card-img" src="#" alt="">
-                <h3>American Crew шампунь Anti-Dandruff</h3>
+                  <img class="product-card-img" src="/image/catalog/" alt="">
+                <h3 class="product-card-title">American Crew шампунь Anti-Dandruff</h3>
                 </a>
                 <b class="product-card-price">904 ₽</b>
                 <a class="button button-card" href="">Купить</a>
-                </div>
+                
               </li>
             </ul>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a href="#" class="pagination pagination-prev pag-disabled">
-                  <span class="invisible-element">Предыдущая</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination pag-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination">2</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination">3</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination">4</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination">5</a>
-              </li>
-              <li class="pagination-item">
-                <a href="#" class="pagination pagination-next">
-                  <span class="invisible-element">Следующая</span>
-                </a>
-              </li>
-            </ul>
-            <button class="button button-show-more" type="button">Показать ещё</button>
+            <div class="pagination-container">
+              <ul class="pagination">
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link pagination-prev pag-disabled">
+                    <span class="invisible-element">Предыдущая</span>
+                  </a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link pag-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link">5</a>
+                </li>
+                <li class="pagination-item">
+                  <a href="#" class="pagination-link pagination-next">
+                    <span class="invisible-element">Следующая</span>
+                  </a>
+                </li>
+              </ul>
+              <button class="button button-show-more" type="button">Показать ещё</button>
+            </div>
         </section>
         
 
 
 
     </main>
-        <footer class="footer">
-        <section class="footer-contats">
-        <h2 class="footer-contats-title invisible-element"><span>Контакты</span></h2>
-        <address class="footer-contacts-adress">
-          <p class="footer-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="footer-number" href="tel:88005558628">+7 800 555-86-28</a>
+    <footer class="page-footer">
+      <section class="page-footer-contats">
+        <h2 class="page-footer-contats-title invisible-element"><span>Контакты</span></h2>
+        <img class="logo-page-footer" src="image/logo-footer.svg" width="183" height="21" alt="Логототип барбершопа">
+        <address class="page-footer-contacts-adress">
+          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+              <a class="page-footer-contacts-adress-phone" href="tel:88005558628">+7 800 555-86-28</a>
         </address>
-        <a class="footer-contacts-map">Как нас найти</a>  
+        <a class="page-footer-contacts-map" href="#">Как нас найти?</a>  
       </section>
       <section class="subscription">
-        <h2 class="footer-title">Получайте лучшие предложения</h2>
-        <form class="footer-form" action="#" method="post">
+        <h2 class="page-footer-title">Получайте лучшие предложения</h2>
+        <form class="page-footer-form" action="#" method="post">
           <p>
             <label for="e-mail">Ваша почта</label>
             <input type="text" name="e-mail" id="e-mail" placeholder="email@htmlacademy.ru">
@@ -256,19 +258,19 @@
         <button class="button button-subscribe" type="submit"><span class="invisible-element">Подписаться</span></button>
       </section>
       <section class="socialclub">
-        <h2 class="footer-title">Давайте дружить</h2>
-        <ul class="footer-nav-list">
-          <li class="footer-nav-element">
+        <h2 class="page-footer-title">Давайте дружить</h2>
+        <ul class="page-footer-nav-list">
+          <li class="page-footer-nav-element">
             <a class="button footer-nav-link" href="#"><span>Twitter</span></a>
           </li>
-          <li class="footer-nav-element">
+          <li class="page-footer-nav-element">
             <a class="button footer-nav-link" href="#"><span>VK</span></a>
           </li>
           <li class="footer-nav-element">
-            <a class="button footer-nav-link" href="#"><span>Instagram</span></a>
+            <a class="button page-footer-nav-link" href="#"><span>Instagram</span></a>
           </li>
         </ul>
-        <p class="madein">Сделано в<a class="link" href="">.html academy</a></p>
+        <p class="about-text">Сделано в <a class="link" href="https://htmlacademy.ru/">.html academy</a></p>
       </section>
     </footer>
 </body>

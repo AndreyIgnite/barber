@@ -30,16 +30,23 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+  }
+
 body {
+    margin: 0;
     font-family: "PT Sans ", sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #242424;
     background-color: #FBF7F4;
+    
+    
 }
 
 .button {
-    font-family: inherit;
+    font-family: 'PT Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 16px;
@@ -217,7 +224,7 @@ body {
   }
 
   .page-footer-contacts-adress-phone {
-    font-family: 'PT Sans Narrow';
+    font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -226,7 +233,7 @@ body {
   }
 
   .page-footer-contacts-map {
-    font-family: 'PT Sans Narrow';
+    font-family: "PT Sans Narrow", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -235,10 +242,122 @@ body {
   }
 
   .page-footer-title {
-    font-family: 'PT Sans Narrow';
+    font-family: "PT Sans Narrow", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
   }
+
+
+.inner-header-title {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px; 
+    text-transform: uppercase;
+    
+}
+
+.breadcrums {
+    
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+}
+
+.breadcrums-link {
+    color: inherit;
+}
+.breadcrums-link-current {
+    color: #595959;
+}
+
+.main-page-catalog {
+    background-color: #FBF7F4;
+    color: #242424;
+    background-image: url("../image/bg-noisy.png");
+}
+
+.catalog-filter-title {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    }
+
+.control-label {
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.sorting-container {
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
+
+.button-light {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.product-card {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.product-card-title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-price {
+    color: #814B18;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.pagination-container {
+    background-color: #FFFFFF;
+    color: #000000;
+    
+}
+
+.pagination-link {
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+.pagination-prev {
+    background: #595959;
+    color: #FFFFFF;
+    
+    
+}
+.pag-current {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
 
