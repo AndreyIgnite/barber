@@ -120,7 +120,7 @@ body {
 .main-index {
     color: #ffffff;
     background-color: #000000;
-    background-image: url("../image/index-bg.jpg");
+    background-image: url("../image/index-bg-alt.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -133,6 +133,7 @@ body {
     display: flex;
     margin: 0 auto;
     width: 1020px;
+    padding: 0 40px;
 }
 
 .nav-list {
@@ -145,8 +146,9 @@ body {
 }
 
 .nav-user {
-    max-width: 250px;
+    max-width: 300px;
     margin-left: auto;
+    justify-content: end;
 }
 
 
@@ -201,13 +203,16 @@ body {
 .index-colums {
     display: flex;
     justify-content: space-between;
-    padding: 40px 40px;
+    padding: 40px;
+    margin-bottom: 31px;
     background-color: #FBF7F4;
     color: #242424;
     background-image: url("../image/bg-noisy.png");
-
     /* outline: 2px solid rgb(132, 0, 255);
     outline-offset: -2px; */
+}
+.index-colums:last-child {
+    margin-bottom: 0;
 }
 
 
