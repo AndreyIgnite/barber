@@ -51,6 +51,11 @@ p {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
   }
@@ -112,8 +117,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 
-    outline: 2px solid rgb(255, 7, 90);
-    outline-offset: -2px;
+
 }
 
 .nav-user .nav-link {
@@ -154,9 +158,6 @@ body {
     margin: 0;
     padding: 0;
 
-
-    outline: 2px solid rgb(255, 238, 7);
-    outline-offset: -2px;
 }
 
 .nav-user {
@@ -172,9 +173,6 @@ body {
     padding-top: 64px;
     padding-bottom: 61px;
 
-    outline: 3px solid rgba(3, 247, 125, 0.5);
-    outline-offset: -3px;
-
 }
 
 .logo {
@@ -187,7 +185,7 @@ body {
 
 .nav-logo {
     width: 140px;
-    margin-right: 100px;
+    margin-right: 60px;
 }
 
 .advantage {
@@ -245,6 +243,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 35px;
+    margin-bottom: 28px;
 }
 
 .services-list {
@@ -252,6 +251,16 @@ body {
     font-size: 20px;
     line-height: 28px;
     width: 390px;
+}
+
+.services-item:last-child {
+    margin-bottom: 30px;
+
+}
+
+.services-item {
+    list-style-type: none;
+    margin-bottom: 22px;
 }
 
 
@@ -269,6 +278,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 35px;
+    margin-bottom: 20px;
 }
 
 .contacts {
@@ -282,6 +292,7 @@ body {
     font-size: 32px;
     line-height: 35px;
     font-weight: 700;
+    margin-bottom: 24px;
     
 }
 .contacts-subtitle {
@@ -327,6 +338,7 @@ body {
     line-height: 35px;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .appointment-form {
@@ -359,22 +371,19 @@ body {
 .page-footer-contats {
     width: 200px;
     margin-right: 130px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+
 }
 
 .subscription {
     width: 279px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+
 }
 
 
 .socialclub {
     margin-left: auto;
     width: 190px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+
 }
 
 .page-footer a {
@@ -460,8 +469,7 @@ body {
 .catalog-right-column {
     width: 700px;
 
-    outline: 3px solid rgba(97, 3, 247, 0.5);
-    outline-offset: -3px;
+
 }
 
 .breadcrums-link {
