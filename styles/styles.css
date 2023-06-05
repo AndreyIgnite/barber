@@ -30,6 +30,12 @@
     font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1 {
     margin: 0;
 }
@@ -59,6 +65,8 @@ body {
     line-height: 24px;
     color: #242424;
     background-color: #FBF7F4;
+
+
 }
 
 .invisible-element {
@@ -71,8 +79,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 
-    outline: 3px solid rgba(97, 3, 247, 0.5);
-    outline-offset: -3px;
 }
 
 .button {
@@ -106,13 +112,15 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 
-    /* outline: 2px solid rgba(21, 255, 0, 0.5);
-    outline-offset: -2px; */
+    outline: 2px solid rgb(255, 7, 90);
+    outline-offset: -2px;
 }
 
 .nav-user .nav-link {
-    min-width: 16px;
-    min-height: 22px;
+    min-height: 70px;
+    min-width: 56px;
+    
+
 }
 
 
@@ -123,6 +131,7 @@ body {
     background-image: url("../image/index-bg-alt.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+
 }
 
 .main-container {
@@ -134,19 +143,24 @@ body {
     margin: 0 auto;
     width: 1020px;
     padding: 0 40px;
+
 }
 
 .nav-list {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    width: 530px;
+    width: 550px;
     margin: 0;
     padding: 0;
+
+
+    outline: 2px solid rgb(255, 238, 7);
+    outline-offset: -2px;
 }
 
 .nav-user {
-    max-width: 300px;
+    max-width: 350px;
     margin-left: auto;
     justify-content: end;
 }
@@ -157,6 +171,10 @@ body {
     width: 1020px;
     padding-top: 64px;
     padding-bottom: 61px;
+
+    outline: 3px solid rgba(3, 247, 125, 0.5);
+    outline-offset: -3px;
+
 }
 
 .logo {
@@ -221,6 +239,8 @@ body {
     text-transform: uppercase;
     
 }
+
+
 .servises-title {
     font-weight: 700;
     font-size: 32px;
