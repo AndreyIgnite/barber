@@ -117,7 +117,8 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 
-
+    /* outline: 2px solid rgb(255, 7, 90);
+    outline-offset: -2px; */
 }
 
 .nav-user .nav-link {
@@ -158,6 +159,9 @@ body {
     margin: 0;
     padding: 0;
 
+
+    /* outline: 2px solid rgb(255, 238, 7);
+    outline-offset: -2px; */
 }
 
 .nav-user {
@@ -354,9 +358,11 @@ body {
 }
 
 .footer-container {
+    display: flex;
+    justify-content: space-between;
     width: 1020px;    
     margin: 0 auto;
-    display: flex;
+    padding: 40px 0;
  
 }
 
@@ -369,21 +375,30 @@ body {
 }
 
 .page-footer-contats {
-    width: 200px;
-    margin-right: 130px;
+    width: 210px;
+    
+}
+
+
+.logo-page-footer {
+    margin-bottom: 27px;
 
 }
 
 .subscription {
     width: 279px;
-
+    /* outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; */
+}
+.about-text2 {
+    margin-top: 36px;
 }
 
-
 .socialclub {
-    margin-left: auto;
-    width: 190px;
+    width: 184px;
 
+    /* outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px; */
 }
 
 .page-footer a {
@@ -401,8 +416,10 @@ body {
 }
 
 .page-footer-contacts-adress p {
+    
     font-size: 14px;
-    line-height: 20px;
+
+    line-height: 21px;
     font-weight: 700;
     color: #FFFFFF;
   }
@@ -426,12 +443,38 @@ body {
   }
 
   .page-footer-title {
+    text-align: center;
+    margin-bottom: 14px;
     font-family: "PT Sans Narrow", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     text-transform: uppercase;
   }
+
+  .page-footer-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 44px;
+    list-style-type: none;
+    /* outline: 2px solid rgb(238, 255, 0);
+    outline-offset: -2px; */
+  }
+
+  .page-footer-nav-item {
+    width: 56px;
+    height: 44px;
+
+  }
+.button-social {
+    background-color: #000000;
+    max-width: 56px;
+    max-height: 44px;
+    display: block;
+    padding: 14px 20px;
+
+}
 
 /* .inner-header {
 
@@ -469,7 +512,8 @@ body {
 .catalog-right-column {
     width: 700px;
 
-
+    outline: 3px solid rgba(97, 3, 247, 0.5);
+    outline-offset: -3px;
 }
 
 .breadcrums-link {
