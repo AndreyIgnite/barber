@@ -33,7 +33,7 @@
           </ul>
         </nav>
       </header>
-    <main class="main-page-catalog">
+    <main class="main-inner main-container">
       <div class="page-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Каталог</h1>
@@ -130,23 +130,23 @@
                 <div class="sorting-container">
                   <form class="sotring-type">
                     <label class="invisible-element" for="select">Сорировка</label>
-                    <div>
                       <select class="select-control" id="select">
                         <option value="exprensive">Сначала дорогие</option>
                         <option value="cheap">Сначала дешёвые</option>
                         <option value="popular">Сначала популярные</option>
                       </select>
-                    </div>
                     <button class="invisible-element" type="submit">Отсортировать</button>
                   </form>
                   <a class="button button-light" href="#">
                     <span class="invisible-element">Показать список</span>
+                    <img class="button-img-list" src="image/other/list.svg" alt="список">
                   </a>
                   <a class="button" href="#">
                     <span class="invisible-element">Показать карточки</span>
+                    <img class="button-img-list" src="image/other/cards.svg" alt="карточки">
                   </a>
                 </div>
-                <ul>
+                <ul class="product-list">
                   <li class="product-card">
                       <a class="product-card-link" href="product.html">
                         <img class="product-card-img" src="image/catalog/catalog1.jpg" alt="">
@@ -205,74 +205,84 @@
                     
                   </li>
                 </ul>
-                <ul class="pagination">
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link pagination-prev pag-disabled">
-                        <span class="invisible-element">Предыдущая</span>
-                      </a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link pag-current">1</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link">2</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link">3</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link">4</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link">5</a>
-                    </li>
-                    <li class="pagination-item">
-                      <a href="#" class="pagination-link pagination-next">
-                        <span class="invisible-element">Следующая</span>
-                      </a>
-                    </li>
+                <div class="pagination-container">
+                  <ul class="pagination">
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link pagination-prev pag-disabled">
+                          <span class="invisible-element">Предыдущая</span>
+                          <img src="image/arrow-left.svg" alt="список">
+                        </a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link pag-current">1</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link">2</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link">3</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link">4</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link">5</a>
+                      </li>
+                      <li class="pagination-item">
+                        <a href="#" class="pagination-link pagination-next">
+                          <span class="invisible-element">Следующая</span>
+                          <img src="image/other/arrow-right.svg" alt="список">
+                        </a>
+                      </li>
                   </ul>
                   <button class="button button-show-more" type="button">Показать ещё</button>
                 </div>
+              </div>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <div class="footer-container">
-      <section class="page-footer-contats">
-        <h2 class="page-footer-contats-title invisible-element"><span>Контакты</span></h2>
-        <img class="logo-page-footer" src="image/logo-footer.svg" width="183" height="21" alt="Логототип барбершопа">
-        <address class="page-footer-contacts-adress">
-          <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-              <a class="page-footer-contacts-adress-phone" href="tel:88005558628">+7 800 555-86-28</a>
-        </address>
-        <a class="page-footer-contacts-map" href="#">Как нас найти?</a>  
-      </section>
-      <section class="subscription">
-        <h2 class="page-footer-title">Получайте лучшие предложения</h2>
-        <form class="page-footer-form" action="#" method="post">
-          <p>
-            <label for="e-mail">Ваша почта</label>
-            <input type="text" name="e-mail" id="e-mail" placeholder="email@htmlacademy.ru">
-          </p>
-        </form>
-        <button class="button button-subscribe" type="submit"><span class="invisible-element">Подписаться</span></button>
-      </section>
-      <section class="socialclub">
-        <h2 class="page-footer-title">Давайте дружить</h2>
-        <ul class="page-footer-nav-list">
-          <li class="page-footer-nav-element">
-            <a class="button footer-nav-link" href="#"><span>Twitter</span></a>
-          </li>
-          <li class="page-footer-nav-element">
-            <a class="button footer-nav-link" href="#"><span>VK</span></a>
-          </li>
-          <li class="footer-nav-element">
-            <a class="button page-footer-nav-link" href="#"><span>Instagram</span></a>
-          </li>
-        </ul>
-        <p class="about-text">Сделано в <a class="link" href="https://htmlacademy.ru/">.html academy</a></p>
-      </section>
+        <section class="page-footer-contats">
+          <h2 class="page-footer-contats-title invisible-element"><span>Контакты</span></h2>
+          <img class="logo-page-footer" src="image/logo-footer.svg" width="190" height="21" alt="Логототип барбершопа">
+          <address class="page-footer-contacts-adress">
+            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                <a class="page-footer-contacts-adress-phone" href="tel:88005558628">+7 800 555-86-28</a>
+          </address>
+          <a class="page-footer-contacts-map" href="#">Как нас найти?</a>  
+        </section>
+        <section class="subscription">
+          <h2 class="page-footer-title">Получайте лучшие предложения</h2>
+          <form class="page-footer-form" action="#" method="post">
+            <p>
+              <label for="e-mail">Ваша почта</label>
+              <input type="text" name="e-mail" id="e-mail" placeholder="email@htmlacademy.ru">
+            </p>
+          </form>
+          <button class="button button-subscribe" type="submit"><span class="invisible-element">Подписаться</span></button>
+        </section>
+        <section class="socialclub">
+          <h2 class="page-footer-title">Давайте дружить</h2>
+          <ul class="page-footer-nav-list">
+            <li class="page-footer-nav-item">
+              <a class="button-social" href="#"><span class="invisible-element">Twitter</span>
+              <img src="image/twitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li class="page-footer-nav-item">
+              <a class="button-social" href="#"><span class="invisible-element">VK</span>
+                <img src="image/vk.svg" alt="VK">
+              </a>
+            </li>
+            <li class="page-footer-nav-item">
+              <a class="button-social" href="#"><span class="invisible-element">Instagram</span>
+                <img src="image/instagram.svg" alt="Instagram">
+              </a>
+            </li>
+          </ul>
+          <p class="about-text2">Сделано в <a class="link" href="https://htmlacademy.ru/">.html academy</a></p>
+        </section>
       </div>
     </footer>
 </body>
