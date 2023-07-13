@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп Бородинский</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <!-- <link rel="stylesheet" href="styles/reset.css"> -->
+    <link rel="stylesheet" href="styles/styles.css">
+    
 
   </head>
   <body class="body-container">
@@ -115,30 +116,33 @@
             <h2 class="appointment-title">Записаться</h2>
             <p class="timerec">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
               <form class="appointment-form" action="#" method="post">
-                <p class="appointment-form-date">
-                  <span class="form-label from-label-icon">
-                    <label for="form-date">Дата</label>
-                    <button class="info" type="button"><span class="invisible-element">Доп информация</span></button>
-                  </span>
+                <p class="field-group appointment-form-date">
+                    <label class="form-label" for="label form-date">Дата
+                      <button class="info" type="button">
+                        <span class="invisible-element">Доп информация</span>
+                        </button>
+                    </label>
                     <input type="date" name="date" id="form-date">
                 </p>
-                <p class="appointment-form-time">
-                  <span class="form-label form-label-icon">
-                    <label for="form-time">Время</label>
-                    <button class="info"><span class="invisible-element">Доп информация</span></button>
-                  </span>
+                <p class="field-group appointment-form-time">
+                    <label class="form-label" for="label form-time">Время
+                      <button class="info">
+                        <span class="invisible-element">Доп информация</span>
+                      </button>
+                    </label>
                     <input type="time" name="time" id="form-time">
                 </p>
-                <p class="appointment-form-number">
+                <p class="field-group appointment-form-number">
                   <label  class="form-label" for="form-phone">Телефон</label>
                   <input type="tel" name="phone" id="form-phone" placeholder="+7 800 000-00-00">
                 </p>
-                <p class="appointment-form-name">
+                <p class="field-group appointment-form-name">
                   <label class="form-label" for="form-name">Ваше Имя</label>
                   <input type="tel" name="name" id="form-name">
                 </p>
+                <button class="button button-appointment" type="submit">Записаться</button>
               </form>
-            <button class="button button-appointment" type="submit">Записаться</button>
+            
           </section>
         </div>
       </div>
@@ -158,7 +162,7 @@
           <h2 class="page-footer-title">Получайте лучшие предложения</h2>
           <form class="page-footer-form" action="#" method="post">
             <p>
-              <label for="e-mail">Ваша почта</label>
+              <label for="e-mail"><span class="invisible-element">Ваша почта</span></label>
               <input type="text" name="e-mail" id="e-mail" placeholder="email@htmlacademy.ru">
             </p>
           </form>
