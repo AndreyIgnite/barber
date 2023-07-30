@@ -24,13 +24,32 @@
         </ul>
         <ul class="nav-list nav-user">
           <li class="nav-element">
-            <a class="nav-link" href="#"><span class="invisible-element">Поиск</span><img src="image/other/search.svg" alt="Поиск"></a>
+            <a class="nav-link" href="#">
+              <span class="invisible-element">Поиск</span>
+              <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6.5a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm-.665 5.249a6.5 6.5 0 111.414-1.414l3.958 3.958-1.414 1.414-3.958-3.958z" />
+              </svg>
+              <!-- <img src="image/other/search.svg" alt="Поиск"> -->
+            </a>
           </li>
           <li class="nav-element">
-            <a class="nav-link" href="#"><span class="invisible-element">Корзина</span><img src="image/other/busket.svg" alt="Корзина"></a>
+            <a class="nav-link" href="#">
+              <span class="invisible-element">Корзина</span>
+              <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09 6L3.577.905 3.662 0h8.676l.086.905L12.909 6h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 6H3.09zM5.1 6h5.8l-.38-4H5.48L5.1 6zm-1.717 8l-.75-6h10.734l-.75 6H3.383zM8.5 9.5v3h2v-3h-2zm-3 3v-3h2v3h-2z" />
+              </svg>
+                
+              <!-- <img src="image/other/busket.svg" alt="Корзина"> -->
+            </a>
           </li>
           <li class="nav-element">
-            <a class="nav-link" href="#">Вход</a>
+            
+            <a class="nav-link nav-link-login" href="#">
+              <svg class="nav-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" fill="#BDBDBD" />
+              </svg>
+               Вход              
+            </a>
           </li>
         </ul>
       </nav>
@@ -76,12 +95,13 @@
                   <span class="services-name">Комплексная стрижка</span>
                   <b class="services-price">2300  ₽</b>
                 </li>
-                <li class="services-item">
-                  <span class="services-name">Каравелло</span>
-                  <b class="services-price">0  ₽</b>
-                </li>
               </ul>
-            <a class="button button-all" href="#">Посмотреть все</a>
+            <a class="button button-all" href="#">Посмотреть все
+              <svg class="icon-show-all" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58579 8.00001L4.29289 2.70712L5.70711 1.29291L12.4142 8.00001L5.70711 14.7071L4.29289 13.2929L9.58579 8.00001Z" fill="white"/>
+                </svg>
+                
+            </a>
           </section>
           <section class="gallery">
             <h2 class="gallery-title">Фотогалерея</h2>
@@ -101,7 +121,7 @@
             <h2 class="contacts-title">Контакты</h2>
               <h3 class="contacts-subtitle">Барбершоп «Бородинский»</h3>
                 <address class="contacts-adress">
-                  <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, <br>литера П.</p>
+                  <p class="contacts-adress-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
                       <a class="contacts-number" href="tel:88005558628">+7 800 555-86-28</a>
                 </address>  
               <h3 class="contacts-subtitle">Время работы</h3>
@@ -109,8 +129,10 @@
                 <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
                 <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
               </ul>
-              <a class="button" href="#">Как проехать</a>
-              <a class="button button-feedback" href="#">Обратная связь</a>
+              <div class="contats-container">
+                <a class="button button-black" href="#">Как проехать</a>
+                <a class="button button-light" href="#">Обратная связь</a>
+              </div>
           </section>
           <section class="appointment">
             <h2 class="appointment-title">Записаться</h2>
@@ -167,7 +189,7 @@
             </p>
             <button class="button button-subscribe" type="submit">
               <span class="invisible-element">Подписаться</span>
-              <img src="image/Покой.svg" alt="">
+              <!-- <img src="image/Покой.svg" alt=""> -->
             </button>
           </form>
          
@@ -177,17 +199,17 @@
           <ul class="page-footer-nav-list">
             <li class="page-footer-nav-item">
               <a class="button-social" href="#"><span class="invisible-element">Twitter</span>
-              <img src="image/twitter.svg" alt="Twitter">
+              <!-- <img src="image/twitter.svg" alt="Twitter"> -->
               </a>
             </li>
             <li class="page-footer-nav-item">
               <a class="button-social" href="#"><span class="invisible-element">VK</span>
-                <img src="image/vk.svg" alt="VK">
+                <!-- <img src="image/vk.svg" alt="VK"> -->
               </a>
             </li>
             <li class="page-footer-nav-item">
               <a class="button-social" href="#"><span class="invisible-element">Instagram</span>
-                <img src="image/instagram.svg" alt="Instagram">
+                <!-- <img src="image/instagram.svg" alt="Instagram"> -->
               </a>
             </li>
           </ul>
