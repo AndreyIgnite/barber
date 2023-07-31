@@ -614,7 +614,7 @@ body {
 
 .page-footer-nav-item:nth-child(3) .button-social {
   background-color: #000000;
-  background-image: url("/image/instagram.svg");
+  background-image: url("../image/instagram.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
