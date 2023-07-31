@@ -88,6 +88,7 @@ body {
   display: inline-block;
   padding: 14px 20px;
   border: none;
+  box-shadow: 0px 4px 8px 0px rgba(79, 70, 60, 0.16);
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -144,7 +145,7 @@ body {
   background: var(--basic-dark, #595959);
 }
 
-.nav-list .nav-element .nav-link:focus {
+.nav-list .nav-element .nav-link:focus-visible {
   outline: 2px solid var(--basic-light, #c2bebe);
   outline-offset: -5px;
 }
@@ -474,7 +475,7 @@ body {
 }
 
 .button-subscribe {
-  background-image: url("/image/arrow-right.svg");
+  background-image: url("../image/arrow-right.svg");
   background-position: center;
   background-size: 16px 16px;
   background-repeat: no-repeat;
@@ -590,7 +591,7 @@ body {
 }
 .page-footer-nav-item:nth-child(1) .button-social {
   background-color: #000000;
-  background-image: url("/image/twitter.svg");
+  background-image: url("../image/twitter.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -602,7 +603,7 @@ body {
 
 .page-footer-nav-item:nth-child(2) .button-social {
   background-color: #000000;
-  background-image: url("/image/vk.svg");
+  background-image: url("../image/vk.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
@@ -723,7 +724,7 @@ body {
 .button-light {
   background-color: #ffffff;
   color: #000000;
-  box-shadow: 0px 4px 8px 0px rgba(79, 70, 60, 0.16);
+  
 }
 .button-black {
   background-color: #000000;
@@ -734,6 +735,22 @@ body {
 .button-img-list {
     display: block;
     padding: 14px 20px;
+}
+.card-grid-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 44px;
+  background-color: white;
+}
+
+.card-grid-toggle-current {
+  background-color: black;
+}
+
+.card-grid-toggle-current svg {
+  fill: white;
 }
 
 .product-list {
