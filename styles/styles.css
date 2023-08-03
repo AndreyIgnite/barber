@@ -140,11 +140,26 @@ body {
 .nav-link:hover .nav-icon {
   fill: #242424;
 }
-
-.nav-logo:focus-visible, .nav-link:focus-visible {
-  outline: 2px solid var(--basic-light, #c2bebe);
-  outline-offset: -5px;
+.button:focus-visible:hover, .slider-button:focus-visible:hover, .button-social:focus-visible:hover {
+  outline: 2px solid var(--special-light, #DBB590);
+  outline-offset: -2px;
 }
+.button-light:focus-visible:hover {
+  outline: 2px solid var(--special-neutral, #AF7842);
+  outline-offset: -2px;
+}
+
+.nav-logo:focus-visible, .nav-link:focus-visible, .button:focus-visible, .slider-button:focus-visible, .button-social:focus-visible {
+  outline: 2px solid var(--basic-light, #E7E7E7);
+  outline-offset: -2px;
+}
+
+.button-light:focus-visible {
+  outline: 2px solid var(--basic-extra-dark, #242424);;
+  outline-offset: -2px;
+}
+
+
 .nav-icon {
   position: absolute;
   fill: #DBDBDB;
@@ -166,6 +181,20 @@ body {
   align-items: center;
   margin-right: 100px;
 }
+.nav-element {
+  position: relative;
+}
+.nav-link-current::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: auto;
+  right: 20px;
+  left: 20px;
+  bottom: 0;
+  background-color: #FFF;
+}
+
 
 .main-index {
   color: #ffffff;
@@ -262,6 +291,7 @@ body {
 }
 
 .index-colums {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 40px;
@@ -275,6 +305,26 @@ body {
 .index-colums:last-child {
   margin-bottom: 0;
 }
+
+.index-colums::after {
+  content: "";
+  position: absolute;
+  bottom: 40px;
+  top: 40px;
+  width: 0;
+  border-right: 1px dashed #595959;
+}
+
+.index-colums:first-of-type::after{
+  left: 50%;
+}
+
+.index-colums:last-of-type::after{
+  left: 431px;
+}
+
+
+
 
 .services {
   font-family: "PT Sans Narrow", sans-serif;
@@ -307,12 +357,12 @@ body {
   content: "";
   border-bottom-style: dotted;
   flex-grow: 1;
-  order: 1;
+  order: 2;
   margin: 0 16px;
 }
 
 .services-price {
-  order: 2;
+  order: 3;
   color: #af7842;
 }
 
@@ -328,12 +378,27 @@ body {
   padding-right: 44px;
 }
 
-.button:hover{
+.button:hover, .slider-button:hover, .pagination-link:hover, .card-grid-toggle:hover{
   background-color: #814B18;
 }
-.button-light:hover{
-  background-color: #DBB590;
+
+.button-social:hover{
+  background-color: #814B18 !important;
 }
+
+.button-light:hover, .pag-current:hover, .card-grid-toggle-current:hover{
+  background-color: #DBB590;
+  color: white;
+}
+
+.card-grid-toggle-current:hover svg{
+  fill: white;
+}
+.pag-current:hover{
+  color: #ffffff;
+}
+
+
 .icon-show-all {
   position: absolute;
   top: 0;
@@ -344,7 +409,7 @@ body {
 }
 
 .gallery {
-  position: relative;
+  
   text-transform: uppercase;
   font-family: "PT Sans Narrow", sans-serif;
   width: 390px;
@@ -460,17 +525,22 @@ body {
   padding: 0;
   width: 48px;
   height: 60px;
+  cursor: pointer;
+  top: 50%;
+  margin-top: -30px;
+}
+
+.slider-container{
+  position: relative;
 }
 
 .slider-next {
   background-image: url(../image/arrow-right.svg);
-  top: 146px;
   left: 342px;
 }
 
 .slider-prev {
   background-image: url(../image/arrow-left.svg);
-  top: 146px;
 }
 
 
@@ -678,8 +748,7 @@ body {
 }
 
 .inner-header {
-  outline: 3px solid rgba(97, 3, 247, 0.5);
-  outline-offset: -3px;
+
 }
 
 .inner-header-title {
@@ -692,6 +761,7 @@ body {
 }
 
 .breadcrums {
+  position: relative;
   display: flex;
   margin-bottom: 32px;
   list-style-type: none;
@@ -700,7 +770,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 22.4px;
 }
 
 .catalog-filter {
@@ -716,13 +786,24 @@ body {
   width: 700px;
 }
 
-/* .bredcrums-item {
+.bredcrums-item {
+  margin-right: 32px;
+}
 
-} */
+.bredcrums-item:first-child::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #242424;
+  transform: rotate(45deg);
+  top: 50%;
+  margin-left: 12px;
+  margin-top: -5px;
+}
 
 .breadcrums-link {
-    margin-right: 32px;
-    color: inherit;
+  color: inherit;
 }
 .breadcrums-link-current {
   color: #595959;
@@ -794,17 +875,21 @@ body {
   align-items: center;
   width: 56px;
   height: 44px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   box-shadow: 0px 4px 8px 0px rgba(79, 70, 60, 0.16);
-}
-
-.card-grid-toggle-current {
-  background-color: black;
   
 }
 
-.card-grid-toggle-current svg {
+.card-grid-toggle-current{
+  background-color: rgb(255, 255, 255);
+}
+
+.card-grid-toggle svg {
   fill: white;
+}
+
+.card-grid-toggle-current svg {
+  fill: rgb(0, 0, 0);
 }
 
 .product-list {
@@ -933,4 +1018,3 @@ body {
 .pag-disabled {
   background-color: #595959;
 }
-
