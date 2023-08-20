@@ -51,7 +51,7 @@ p {
   margin: 0;
 }
 
-ul {
+ul, ol, button {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -487,8 +487,8 @@ body {
 
 .appointment-form {
   display: grid;
-  grid-template-columns: 115px 74px 208px;
-  gap: 19px 17px;
+  grid-template-columns: 115px 84px 198px;
+  gap: 15px;
 }
 
 .appointment-form-name {
@@ -496,12 +496,33 @@ body {
 }
 
 .form-label {
+  margin-bottom: 8px;
   text-transform: uppercase;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
 }
+
+.form-label-icon {
+  position: relative;
+  padding-right: 26px;
+}
+
+.info {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  margin-left: 2px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background-image: url(../image/info.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .button-appointment {
   grid-column: 1 / -1;
@@ -527,15 +548,20 @@ body {
   height: 60px;
   cursor: pointer;
   top: 50%;
-  margin-top: -30px;
+  transform: translateY(-50%);
 }
 
+
+.slider-image {
+  display: block;
+}
 .slider-container{
   position: relative;
 }
 
 .slider-next {
-  background-image: url(../image/arrow-right.svg);
+  background-image: url(../image/arrow-left.svg);
+  transform: translateY(-50%) rotate(180deg);
   left: 342px;
 }
 
@@ -543,11 +569,36 @@ body {
   background-image: url(../image/arrow-left.svg);
 }
 
-
-.field-group label,
-.field-group input {
-  display: block;
+.slider-pagination {
+  display: grid;
+  grid-template-columns: repeat(4, 8px);
+  gap: 8px;
+  justify-content: center;
+  list-style-type: none;
 }
+.slider-button-pointer {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  border: none;
+  background-color: #BDBDBD;
+}
+
+.slider-button-pointer:hover {
+  background-color: #AF7842;
+}
+
+.slider-button-pointer:focus-visible {
+  border: none;
+  outline: none;
+  background-color: #DBB590;
+}
+
+.slider-button-pointer-current {
+  background-color: #242424;
+}
+
 
 .timerec {
   padding-bottom: 24px;
@@ -559,9 +610,7 @@ body {
 
 }
 
-.appointment-form  .info {
-  display: none;
-}
+
 
 .footer-container {
   display: flex;
@@ -745,10 +794,6 @@ body {
   height: 44px;
   display: block;
   padding: 14px 20px;
-}
-
-.inner-header {
-
 }
 
 .inner-header-title {

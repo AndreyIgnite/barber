@@ -109,13 +109,13 @@
               <img class="slider-image" src="image/gallery-1.jpg" width="390" height="250" alt="Примеры стрижек">
               <button class="slider-button slider-prev"><span class="invisible-element">Предыдущее фото</span></button>
               <button class="slider-button slider-next"><span class="invisible-element">Следующее фото</span></button>
-            </div>
               <ol class="slider-pagination">
-                <li class="slider-pagination-item"><button class="slider-button-pointer slider-button-pressed"><span class="invisible-element">Фото 1</span></button></li>
+                <li class="slider-pagination-item"><button class="slider-button-pointer slider-button-pointer-current"><span class="invisible-element">Фото 1</span></button></li>
                 <li class="slider-pagination-item"><button class="slider-button-pointer"><span class="invisible-element">Фото 2</span></button></li>
                 <li class="slider-pagination-item"><button class="slider-button-pointer"><span class="invisible-element">Фото 3</span></button></li>
                 <li class="slider-pagination-item"><button class="slider-button-pointer"><span class="invisible-element">Фото 4</span></button></li>
               </ol>
+            </div>
           </section>
         </div>
         <div class="index-colums">
@@ -141,23 +141,25 @@
             <p class="timerec">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
               <form class="appointment-form" action="#" method="post">
                 <p class="field-group appointment-form-date">
-                    <label class="form-label" for="label form-date">Дата
-                      <button class="info" type="button">
+                  <span class="form-label form-label-icon">
+                    <label for="appointment-date">Дата</label>
+                        <button class="info" type="button">
                         <span class="invisible-element">Доп информация</span>
                         </button>
-                    </label>
-                    <input type="date" name="date" id="form-date">
+                      </span>  
+                      <input id="appointment-date" type="date" name="date" id="form-date">
                 </p>
                 <p class="field-group appointment-form-time">
-                    <label class="form-label" for="label form-time">Время
-                      <button class="info">
-                        <span class="invisible-element">Доп информация</span>
+                  <span class="form-label form-label-icon">
+                    <label for="appointment-time">Время</label>
+                    <button class="info" type="button">
+                      <span class="invisible-element">Доп информация</span>
                       </button>
-                    </label>
-                    <input type="time" name="time" id="form-time">
+                  </span>
+                    <input id="appointment-time" type="time" name="time" id="form-time">
                 </p>
                 <p class="field-group appointment-form-number">
-                  <label  class="form-label" for="form-phone">Телефон</label>
+                  <label class="form-label" for="form-phone">Телефон</label>
                   <input type="tel" name="phone" id="form-phone" placeholder="+7 800 000-00-00">
                 </p>
                 <p class="field-group appointment-form-name">
