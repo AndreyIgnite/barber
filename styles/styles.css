@@ -518,9 +518,27 @@ body {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
   background-image: url(../image/info.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.field {
+  height: 44px;
+  padding: 10px 16px;
+  border: 2px solid var(--basic-extra-dark, #242424);
+  background-color: var(--basic-white, #FFF);
+  font: inherit;
+  font-weight: 700;
+}
+
+.field:hover, .field:focus-visible {
+  border: 2px solid var(--special-neutral, #AF7842);
+}
+
+.field:focus-visible {
+  outline: 2px solid var(--special-light, #DBB590);
 }
 
 
@@ -663,9 +681,6 @@ body {
 .socialclub {
   max-width: 184px;
   margin-left: auto;
-
-  /* outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px; */
 }
 
 .page-footer-form {
@@ -678,7 +693,7 @@ body {
   flex-direction: column;
 }
 
-.page-footer-form p input{
+.footer-field {
   height: 100%;
   text-align: center;
   font-family: "PT Sans Narrow", sans-serif;
@@ -686,9 +701,16 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
- 
+  z-index: 1;
 }
 
+.footer-field:hover, .footer-field:focus-visible {
+  border: 2px solid var(--special-neutral, #AF7842);
+}
+
+.footer-field:focus-visible {
+  outline: 2px solid var(--special-light, #DBB590);
+}
 
 .page-footer a {
   color: #ffffff;
@@ -745,22 +767,9 @@ body {
   display: grid;
   grid-template-columns: 56px 56px 56px;
   gap: 8px;
-  /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    min-height: 44px; */
-
-  /* outline: 2px solid rgb(238, 255, 0);
-    outline-offset: -2px; */
+  margin-bottom: 36px;
 }
-
-.page-footer-nav-item {
-  width: 56px;
-  height: 44px;
-  /* outline: 2px solid rgb(0, 255, 42);
-    outline-offset: -2px; */
-}
-.page-footer-nav-item:nth-child(1) .button-social {
+.button-social-twitter {
   background-color: #000000;
   background-image: url("../image/twitter.svg");
   background-position: center;
@@ -772,7 +781,7 @@ body {
   
 }
 
-.page-footer-nav-item:nth-child(2) .button-social {
+.button-social-vk {
   background-color: #000000;
   background-image: url("../image/vk.svg");
   background-position: center;
@@ -784,7 +793,7 @@ body {
   padding: 14px 20px;
 }
 
-.page-footer-nav-item:nth-child(3) .button-social {
+.button-social-insta {
   background-color: #000000;
   background-image: url("../image/instagram.svg");
   background-position: center;
@@ -794,6 +803,15 @@ body {
   height: 44px;
   display: block;
   padding: 14px 20px;
+}
+
+.hov:hover {
+  background-color: var(--special-dark, #814B18);
+}
+
+.hov:focus-visible {
+  outline: 2px solid var(--special-light, #DBB590);
+
 }
 
 .inner-header-title {
@@ -843,7 +861,7 @@ body {
   background-color: #242424;
   transform: rotate(45deg);
   top: 50%;
-  margin-left: 12px;
+  left: 63px;
   margin-top: -5px;
 }
 
