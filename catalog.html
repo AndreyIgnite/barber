@@ -69,14 +69,22 @@
               <form class="catalog-filter" action="#" method="get">
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Цена</legend>
-                      <button class="range-toogle toogle-min" type="button">
-                          <span class="invisible-element">Изменить минимальную цену</span>
-                      </button>
-                      <button class="range-toogle toogle-max" type="button">
-                          <span class="invisible-element">Изменить максимальную цену</span>
-                      </button>
-                      <label>от <input class="catalog-filter-input" type="number" name="min-price">₽</label>
-                      <label>до <input class="catalog-filter-input" type="number" name="max-price">₽</label>
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar">
+                            <button class="range-toogle toogle-min" type="button">
+                                <span class="invisible-element">Изменить минимальную цену</span>
+                            </button>
+                            <button class="range-toogle toogle-max" type="button">
+                                <span class="invisible-element">Изменить максимальную цену</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="range-wrapper-input">
+                          <label>от<input class="range-input" type="number" name="min-price">₽</label>
+                          <label>до<input class="range-input" type="number" name="max-price">₽</label>
+                        </div>
+                      </div>
                   </fieldset>
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">Производители</legend>

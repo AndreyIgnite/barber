@@ -541,6 +541,25 @@ body {
   outline: 2px solid var(--special-light, #DBB590);
 }
 
+.field:disabled, .field:disabled:hover {
+  border: 2px solid #595959;
+  background-color: #E7E7E7;
+  color: #595959;
+}
+
+.field:focus:invalid  {
+  border: 2px solid #EA5454;
+}
+
+.field:invalid {
+  box-shadow: none;
+}
+
+.field::placeholder {
+  color: #DBDBDB;
+  opacity: 1;
+}
+
 
 .button-appointment {
   grid-column: 1 / -1;
@@ -620,14 +639,46 @@ body {
 
 .timerec {
   padding-bottom: 24px;
-
   font-size: 14px;
   line-height: 19px;
   font-style: normal;
   font-weight: 400;
-
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #242424;
+  border-radius: 2px;
+  margin-bottom: 16px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  width: 136px;
+  left: 36px;
+  background-color: #AF7842;
+}
+
+.range-toogle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.toogle-min {
+  top: -8px;
+  left: 0px;
+}
+
+.toogle-max {
+  top: -8px;
+  right: 0px;
+}
 
 
 .footer-container {
@@ -711,6 +762,8 @@ body {
 .footer-field:focus-visible {
   outline: 2px solid var(--special-light, #DBB590);
 }
+
+
 
 .page-footer a {
   color: #ffffff;
@@ -811,8 +864,9 @@ body {
 
 .hov:focus-visible {
   outline: 2px solid var(--special-light, #DBB590);
-
 }
+
+
 
 .inner-header-title {
     margin-bottom: 16px;
@@ -880,6 +934,7 @@ body {
 }
 
 .catalog-filter-title {
+  margin-bottom: 30px;
   font-family: "PT Sans Narrow", sans-serif;
   font-style: normal;
   font-weight: 700;
