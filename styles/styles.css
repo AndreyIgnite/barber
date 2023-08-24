@@ -656,8 +656,6 @@ body {
 .range-bar {
   position: absolute;
   height: 4px;
-  width: 136px;
-  left: 36px;
   background-color: #AF7842;
 }
 
@@ -668,16 +666,123 @@ body {
   border-radius: 50%;
   border: 2px solid black;
   background-color: white;
+  cursor: pointer;
 }
 
 .toogle-min {
   top: -8px;
-  left: 0px;
+  left: -10px;
+}
+
+.toogle-min:hover, .toogle-max:hover {
+  background-color: #DBB590;
+}
+
+.toogle-min:focus-visible, .toogle-max:focus-visible {
+  outline: 2px solid #AF7842;
 }
 
 .toogle-max {
   top: -8px;
-  right: 0px;
+  right: -10px;
+}
+.range-wrapper-input {
+  display: flex;
+  justify-content: center;
+
+}
+.label-input {
+  display: flex;
+  margin-right: 5px;
+
+}
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-group {
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.catalog-filter-group:nth-child(2) .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  padding: 2px;
+  left: 5px;
+  top: 1px;
+}
+
+.control-mark:hover {
+  border-color: #AF7842;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #BDBDBD;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before, .control-input[type="checkbox"]:checked + .control-mark::after  {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: black;
+}
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+.catalog-filter-group:nth-child(3) .control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 2px;
+  left: 5px;
+  top: 1px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before, .control-input[type="radio"]:checked + .control-mark::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 50%;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: black;
+}
+
+.select {
+  display: flex;
+  width: 260px;
 }
 
 
@@ -934,7 +1039,7 @@ body {
 }
 
 .catalog-filter-title {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   font-family: "PT Sans Narrow", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -965,12 +1070,31 @@ body {
 }
 
 .sotring-type {
-    border: 2px solid black;
-    width: 260px;
-    height: 44px;
     margin-right: auto;
-
 }
+
+.select-control {
+  flex-grow: 1;
+  padding: 10px 16px;
+  font: inherit;
+  font-weight: 700;
+  border: 2px solid black;
+  appearance: none;
+  background-image: url(../image/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.select-control:hover {
+  border: 2px solid var(--special-light, #AF7842);
+}
+
+.select-control:focus-visible {
+  border: 2px solid var(--special-light, #AF7842);
+  outline: 2px solid #DBB590;
+}
+
+
 
 .button-light {
   background-color: #ffffff;
