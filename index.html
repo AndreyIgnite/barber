@@ -90,7 +90,7 @@
           </li>
           <li class="nav-element">
             
-            <a class="nav-link nav-link-login" href="#">
+            <a id="button-login" class="nav-link nav-link-login" href="#">
               <svg class="nav-icon" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" fill="#BDBDBD" />
               </svg>
@@ -193,7 +193,7 @@
                         <span class="invisible-element">Доп информация</span>
                         </button>
                       </span>  
-                      <input class="field" id="appointment-date" type="date" name="date" id="form-date" disabled>
+                      <input class="field" id="appointment-date" type="date" name="date" id="form-date">
                 </p>
                 <p class="field-group appointment-form-time">
                   <span class="form-label form-label-icon">
@@ -267,6 +267,28 @@
         </section>
       </div>
     </footer>
+   
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <button class="modal-close"><span class="invisible-element">Закрыть</span> </button>
+        <h2 class="modal-title">Личный кабинет</h2>
+        <form action="">
+          <input class="field" type="text" name="login">
+          <input class="field" type="password" name="password">
+          <div class="remember-section">
+            <label class="control-modal">
+              <input class="invisible-element control-input" type="checkbox" name="remember-me">
+              <span class="control-mark-modal"></span>
+              <span class="control-label-modal">Запомнить меня</span>
+            </label>
+            <p>Забыл пароль</p>
+          </div>
+          <button>Войти</button>
+        </form>
+        
+        <button>Регистрация</button>
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>

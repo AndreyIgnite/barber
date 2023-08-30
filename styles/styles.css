@@ -1326,7 +1326,7 @@ body {
 }
 
 .popover-content {
-  
+  height: 100%;
 
 }
 
@@ -1388,3 +1388,124 @@ body {
   line-height: 24px;
 }
 
+.modal-container {
+  box-sizing: border-box;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(79, 70, 60, 0.8);
+  top: 0;
+  left: 0;
+}
+.modal-show {
+  display: block;
+}
+
+.modal-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.modal {
+  background-color: white;
+  color: #000000;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.modal-auth {
+  position: absolute;
+  width: 440px;
+  height: 403px;
+  margin: auto;
+  padding: 40px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-close {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 56px;
+  height: 44px;
+  border: none;
+  background-color: white;
+  background-image: url(../image/cross.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.control-modal {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  line-height: 24px;
+}
+
+.remember-section {
+  display: flex;
+}
+
+.remember-section p {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  text-decoration: underline;
+}
+.control-mark-modal {
+  position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    padding: 2px;
+    top: 2px;
+    left: 0;
+
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-modal::before, .control-input[type="checkbox"]:checked + .control-mark-modal::after {
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: black;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-modal::before {
+  transform: rotate(45deg);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-modal::after {
+  transform: rotate(-45deg);
+}
+
+.control-label-modal {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: none;
+  letter-spacing: 1px;
+}
