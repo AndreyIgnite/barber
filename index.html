@@ -32,15 +32,61 @@
               <!-- <img src="image/other/search.svg" alt="Поиск"> -->
             </a>
           </li>
-          <li class="nav-element">
-            <a class="nav-link" href="#">
+          <li class="nav-element busket">
+            <a id="button-show-popover" class="nav-link" href="#">
               <span class="invisible-element">Корзина</span>
               <svg class="nav-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09 6L3.577.905 3.662 0h8.676l.086.905L12.909 6h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 6H3.09zM5.1 6h5.8l-.38-4H5.48L5.1 6zm-1.717 8l-.75-6h10.734l-.75 6H3.383zM8.5 9.5v3h2v-3h-2zm-3 3v-3h2v3h-2z" />
               </svg>
-                
-              <!-- <img src="image/other/busket.svg" alt="Корзина"> -->
             </a>
+            <div class="popover popover-busk">
+              <button id="popover-off" class="button button-light button-close-popover">
+              <svg class="popover-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.09 6L3.577.905 3.662 0h8.676l.086.905L12.909 6h2.724l-.14 1.124-1 8-.11.876H1.617l-.11-.876-1-8L.368 6H3.09zM5.1 6h5.8l-.38-4H5.48L5.1 6zm-1.717 8l-.75-6h10.734l-.75 6H3.383zM8.5 9.5v3h2v-3h-2zm-3 3v-3h2v3h-2z" />
+              </svg>2
+              <span class="invisible-element">Закрыть</span></button>
+                <div class="popover-content">
+                  <h2 class="popover-title">Корзина</h2>
+                  <ul class="popover-products">
+                    <li class="item-popover-products">
+                      <div class="product-in-busket">
+                        <span class="product-in-busket-title">Стрижка машинкой</span>
+                        <span class="busket-price">800 Р</span>
+                      </div>
+                      <button class="button button-del-product">
+                        <svg class="trash-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                          <g id="trash" clip-path="url(#clip0_122607_622)">
+                          <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3.41965 1L3.70316 0.503861L3.99108 0H4.5714H11.4285H12.0089L12.2968 0.503861L12.5803 1H14.5H15.6286L15.4927 2.12042L13.9158 15.1204L13.8091 16H12.923H3.07689H2.19087L2.08417 15.1204L0.507247 2.12042L0.371338 1H1.49997H3.41965ZM3.96292 14L2.6286 3H13.3713L12.037 14H3.96292ZM9.00251 4.92875L8.50251 11.9288L10.4974 12.0712L10.9974 5.07125L9.00251 4.92875ZM5.50251 12.0712L5.00251 5.07125L6.99743 4.92875L7.49743 11.9288L5.50251 12.0712Z"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_122607_622">
+                          <rect width="16" height="16" fill="none"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                        <span class="invisible-element">Удалить</span></button>
+                    </li>
+                    <li class="item-popover-products">
+                      <div class="product-in-busket">
+                        Стрижка усов
+                        <span class="busket-price">1200 Р</span>
+                      </div>
+                      <button class="button button-del-product">
+                        <svg class="trash-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                          <g id="trash" clip-path="url(#clip0_122607_622)">
+                          <path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M3.41965 1L3.70316 0.503861L3.99108 0H4.5714H11.4285H12.0089L12.2968 0.503861L12.5803 1H14.5H15.6286L15.4927 2.12042L13.9158 15.1204L13.8091 16H12.923H3.07689H2.19087L2.08417 15.1204L0.507247 2.12042L0.371338 1H1.49997H3.41965ZM3.96292 14L2.6286 3H13.3713L12.037 14H3.96292ZM9.00251 4.92875L8.50251 11.9288L10.4974 12.0712L10.9974 5.07125L9.00251 4.92875ZM5.50251 12.0712L5.00251 5.07125L6.99743 4.92875L7.49743 11.9288L5.50251 12.0712Z"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_122607_622">
+                          <rect width="16" height="16" fill="none"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                        <span class="invisible-element">Удалить</span></button>
+                    </li>
+                  </ul>
+                </div>
+            </div>
           </li>
           <li class="nav-element">
             

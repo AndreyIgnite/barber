@@ -733,7 +733,7 @@ body {
   top: 1px;
 }
 
-.control-mark:hover {
+.control:hover .control-mark {
   border-color: #AF7842;
 }
 
@@ -1078,6 +1078,7 @@ body {
   padding: 10px 16px;
   font: inherit;
   font-weight: 700;
+  line-height: 20px;
   border: 2px solid black;
   appearance: none;
   background-image: url(../image/arrow-down.svg);
@@ -1260,3 +1261,130 @@ body {
 .pag-disabled {
   background-color: #595959;
 }
+
+.busket {
+  position: relative;    
+}
+
+.popover {
+  padding: 40px;
+  padding-top: 42px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  background-color: white;
+  color: #000000;
+  box-shadow: 16px 16px 21px 39px rgba(79, 70, 60, 0.16);
+
+}
+
+.popover-busk {
+  display: none;
+  position: absolute;
+  width: 420px;
+  min-height: 200px;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.popover-show {
+  display: block;
+}
+
+.button-close-popover {
+  position: absolute;
+  padding: 24px 20px;
+  padding-left: 40px;
+  box-shadow: none;
+  top: 0;
+  right: 0;
+  min-height: 70px;
+}
+
+.button-close-popover:hover .popover-icon {
+  fill: white;
+}
+
+
+.popover-icon {
+  fill: black;
+  position: absolute;
+  top: 0;
+  right: auto;
+  left: 20px;
+  bottom: 0;
+  margin: auto;
+  
+}
+
+.popover-title {
+  margin-bottom: 24px;
+}
+
+.popover-content {
+  
+
+}
+
+.product-in-busket {
+  display: flex;
+  flex-direction: column;
+  color: #242424;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.product-in-busket-title {
+  margin-bottom: 2px;
+}
+
+
+.trash-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: white;
+}
+
+.item-popover-products {
+  position: relative;
+  display: flex;
+  align-items: start;
+}
+
+.item-popover-products:not(:last-child) {
+  margin-bottom: 46px;
+
+}
+
+.item-popover-products:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  border-bottom: 1px dashed #595959;
+  left: 0;
+  right: 0;
+  top: 76px;
+
+}
+
+.button-del-product {
+  margin-left: auto;
+  position: relative;
+  min-width: 56px;
+  min-height: 44px;
+}
+
+.busket-price {
+  color: #AF7842;
+  font-size: 16px;
+  line-height: 24px;
+}
+
