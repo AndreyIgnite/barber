@@ -272,21 +272,21 @@
       <div class="modal modal-auth">
         <button class="modal-close"><span class="invisible-element">Закрыть</span> </button>
         <h2 class="modal-title">Личный кабинет</h2>
-        <form action="">
-          <input class="field" type="text" name="login">
-          <input class="field" type="password" name="password">
+        <form class="modal-auth-form" action="#" method="post">
+          <input class="field field-modal" type="text" name="login" placeholder="Логин">
+          <input class="field field-modal" type="password" name="password" placeholder="Пароль">
           <div class="remember-section">
             <label class="control-modal">
               <input class="invisible-element control-input" type="checkbox" name="remember-me">
               <span class="control-mark-modal"></span>
               <span class="control-label-modal">Запомнить меня</span>
             </label>
-            <p>Забыл пароль</p>
+            <a class="forget-pass" href="#">Забыл пароль</a>
           </div>
-          <button>Войти</button>
+          <button class="button button-enter">Войти</button>
         </form>
         
-        <button>Регистрация</button>
+        <button class="button button-light button-registration">Регистрация</button>
       </div>
     </div>
     <script src="./main.js"></script>

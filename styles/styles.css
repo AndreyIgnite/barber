@@ -737,6 +737,8 @@ body {
   border-color: #AF7842;
 }
 
+
+
 .control-input:disabled + .control-mark {
   border-color: #BDBDBD;
 }
@@ -1149,23 +1151,33 @@ body {
 }
 
 .product-card {
-  display: flex;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 200px min-content auto min-content 16px;
+  grid-template-columns: 16px 188px 16px;
+  /* display: flex;
   flex-direction: column;
-
-
   height: 401px;
   background-color: #ffffff;
-  color: #000000;
-  
+  color: #000000; */
+}
+.product-card-link-img {
+  grid-column: 1/-1;
 }
 
+.product-card-title-link, .product-card-price, .button-card {
+  grid-column: 2/3;
+}
+
+
 .product-card-title-link {
+  margin-top: 16px;
   margin-bottom: 8px;
   color: #000000;
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  text-decoration: none;
+  text-decoration: none; 
 }
 
 .card-content {
@@ -1176,11 +1188,11 @@ body {
 }
 
 .button-card {
-  margin-top: auto;
+  /* margin-top: auto;
   display: flex;
   height: 44px;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .product-card-link {
@@ -1188,6 +1200,7 @@ body {
 }
 
 .product-card-price {
+  margin-bottom: 40px;
   color: #814b18;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 24px;
@@ -1394,7 +1407,7 @@ body {
   height: 100%;
   width: 100%;
   position: fixed;
-  background-color: rgba(79, 70, 60, 0.8);
+  background-color: rgba(62, 138, 189, 0.8);
   top: 0;
   left: 0;
 }
@@ -1403,6 +1416,7 @@ body {
 }
 
 .modal-title {
+  margin-bottom: 24px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   font-style: normal;
@@ -1455,15 +1469,20 @@ body {
   line-height: 24px;
 }
 
+.control-modal:hover .control-mark-modal {
+  border-color: #AF7842;
+}
+
 .remember-section {
   display: flex;
 }
 
-.remember-section p {
+.remember-section a {
   margin-left: auto;
   display: flex;
   align-items: center;
   font-size: 16px;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -1502,10 +1521,36 @@ body {
 .control-label-modal {
   display: flex;
   align-items: center;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   text-transform: none;
-  letter-spacing: 1px;
+  
+}
+
+
+.modal-auth-form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 16px;
+  margin-bottom: 16px;
+  
+}
+
+.button-registration {
+  min-width: 360px;
+}
+
+.forget-pass {
+  color: inherit;
+}
+
+.field-modal {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 }
